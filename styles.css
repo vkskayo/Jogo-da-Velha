@@ -1,0 +1,90 @@
+.grid {
+    width: 458px;
+    height:458px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.row1 {
+    border-bottom: 4px solid black;
+}
+
+.row2 {
+    border-bottom: 4px solid black;
+}
+
+.col1 {
+    border-right: 4px solid black;
+}
+
+.col2 {
+    border-right: 4px solid black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.radius {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    right: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+
+}
+
+.cross1 {
+    width: calc(1.414 * 150px);
+    transform: rotate(45deg);
+    transform-origin: top left;
+    border-top: 1px solid black;
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    box-sizing: border-box;
+}
+
+.cross2 {
+    width: calc(1.414 * 150px);
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    border-top: 1px solid black;
+    position: absolute;
+    bottom: -2px;
+    left: -1px;
+    box-sizing: border-box; 
+}
+
+.win {
+    font-size: 35px;
+    display: block;
+    margin-top: 50px;
+}
+
+#jogador {
+    font-size: 25px;
+}
+
+button {
+    width: 75px;
+    height: 40px;
+    background-color: rgb(211, 245, 159);
+    display: block;
+    margin-top: 50px;
+}

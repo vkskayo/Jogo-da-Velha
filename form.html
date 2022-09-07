@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey</title>
+    <link rel="stylesheet" href="formStyles.css">
+  </head>
+  <body>
+    <h1 id="title">Jogo da Velha</h1>
+    <p id="description">
+      Please fill all the spaces
+    </p>
+    <form id="survey-form" action="index.html">
+      <fieldset>
+       <label id="name1-label">Name(jogador1): <input placeholder="name" required type="text" id="name1">
+        </label>
+        <label id="name2-label">Name(jogador2): <input placeholder="name" id="name2" required type="text">
+        </label>
+        </fieldset>
+      <fieldset>
+        </label>
+        <label>Which is your favorite color? <br><br> - Jogador1
+        <select id="dropdown">
+          <option value="">
+            (select one)
+          </option>
+          <option value="1">
+            Red
+          </option>
+         
+          <option value="2">
+            Green
+          </option>
+       
+        </select>
+        
+        <label><input name="gender1" value="Woman" class="inline" type="radio"/>Woman</label>
+        <label><input name="gender1" value="Man" class="inline" type="radio"/>Man</label>
+
+        <label><br>- Jogador2
+          <select id="dropdown">
+            <option value="">
+              (select one)
+            </option>
+            <option value="1">
+              Red
+            </option>
+           
+            <option value="2">
+              Green
+            </option>
+         
+          </select>
+    </label>
+
+        <label><input name="gender2" value="Woman" class="inline" type="radio"/>Woman</label>
+        <label><input name="gender2" value="Man" class="inline" type="radio"/>Man</label>
+       
+        <label>
+            Write your hobbies!<textarea placeholder="I like reading books." required ></textarea></label>
+
+         <label><input class="inline" value="terms" required class="inline" type="checkbox"/> Terms and condidtions</label>
+        <label><input class="inline" value="mandatoryLove" required class="inline" type="checkbox"/> I love games!</label>
+        </fieldset>
+        <input type="submit" onClick="window.location.href='index.html';"/>
+    </form>
+
+     
+    <script src="app.js">
+   
+    </script>
+  </body>
